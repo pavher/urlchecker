@@ -1,0 +1,27 @@
+{
+    "name" : "pavher/urlscanner",
+    "description" : "This application scans URLs listed in CSV file (testing purpose only)",
+    "keywords": ["url", "scanner", "csv"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pavel Herink",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.1",
+        "league/csv": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.1"
+    },
+    "suggest": {
+        "league/csv": "CSV reader"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Pavher\\Urlscanner\\" : "src/"
+        }
+    }
+}
