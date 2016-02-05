@@ -41,6 +41,10 @@ class Scanner
         return $invalidUrls;
     }
 
+    /**
+     * @param $url
+     * @return int
+     */
     public function getStatusCodeForUrl($url)
     {
         $httpResponse = $this->httpClient->get($url);
